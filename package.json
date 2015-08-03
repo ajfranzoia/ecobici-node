@@ -1,0 +1,40 @@
+{
+  "name": "ecobici-node",
+  "version": "0.1.0",
+  "private": false,
+  "dependencies": {
+    "chai": "^3.2.0",
+    "geolib": "^2.0.18",
+    "lodash": "^3.10.1",
+    "mocha": "^2.3.2",
+    "nock": "^2.11.0",
+    "node-geocoder": "^3.0.0",
+    "request": "^2.61.0",
+    "sinon": "^1.16.1",
+    "xml2js": "^0.4.12"
+  },
+  "author": {
+    "name": "Augusto Franzoia",
+    "email": "augusto(at)codaxis(dot)com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/codaxis/ecobici-node.git"
+  },
+  "bugs": {
+    "url": "https://github.com/codaxis/ecobici-node/issues"
+  },
+  "homepage": "https://github.com/codaxis/ecobici-node",
+  "license": "MIT",
+  "keywords": [
+    "ecobici",
+    "cycling",
+    "stations",
+    "public transport",
+    "buenos aires",
+    "argentina"
+  ],
+  "engines": {
+    "node": "*"
+  }
+}
