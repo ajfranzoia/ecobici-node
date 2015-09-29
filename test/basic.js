@@ -1,5 +1,9 @@
+ /*exported assert, sinon */
+ /*global describe, it */
+
+'use strict';
+
 var assert = require('assert');
-var nock = require('nock');
 var nocks = require('./util/nocks').nocks;
 var should = require('chai').should();
 var sinon = require('sinon');

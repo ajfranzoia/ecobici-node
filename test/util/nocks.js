@@ -1,4 +1,7 @@
 // Nocks (https://github.com/pgte/nock) for use in testing API
+
+'use strict';
+
 var nock = require('nock');
 
 exports.nocks = {
@@ -39,7 +42,7 @@ exports.nocks = {
   notFound: function () {
     nock('https://recursos-data.buenosaires.gob.ar').get('/ckan2/ecobici/estado-ecobici.xml').reply(404);
   }
-}
+};
 
 function wrapXML(innerXML) {
   return '<?xml version="1.0" encoding="utf-8"?><soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"><soap:Body><BicicletasWSResponse xmlns="http://tempuri.org/"><BicicletasWSResult><Bicicletas xmlns="http://bicis.buenosaires.gob.ar/ServiceBicycle.asmx"><Estaciones>' +
